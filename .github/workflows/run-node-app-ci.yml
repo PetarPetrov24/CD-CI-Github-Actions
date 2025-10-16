@@ -29,10 +29,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Install dependencies using npm ci
-    - run: npm ci
+      run: npm ci
     
     - name: Start the app
-    - run: npm run 
+      run: npm run 
     
-    - run: Run Tests
-    - run: npm test
+    - name: Run Tests
+      run: npm test
